@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Space+Grotesk:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.container {
+  width: 90%;
+  /*margin: 0 auto;*/
+
+}
+
+.header-line {
+  margin-right: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-logo-title {
+  display: flex;
+  width: 180px;
+  height: 100px;
+  margin-top: 25px;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 20px;
+  position: absolute;
+  top: 22px;
+  left: 75px;
+  color: #5d5def;
+}
+
+.navigation {
+  border-left: 1px solid black;
+  padding: 0 15px;
+}
+
+.navigation-item {
+  color: #000;
+  margin-right: 60px;
+  font-size: 15px;
+}
+
+.navigation-item:hover {
+  text-decoration: none;
+}
+
+.reg-log {
+  width: 100px;
+  height: 30px;
+  border-radius: 50px;
+  color: white;
+  background-color: gray;
+  text-decoration: none;
+}
+.reg-log:hover {
+  background-color: black;
+}
+
+.reg-log-item {
+  color: white;
+}
+
+.reg-log-item:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.reg-log-green:hover {
+  background-color: mediumseagreen;
+  color: black;
+}
+
+.main {
+  width: 90%;
+}
+.main .main-wrapper {
+  display: block;
+  height: 600px;
+  margin: 0 auto;
+
+}
+.main .main-header-wrapper {
+  position: relative;
+}
+.main .main-header {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  position: relative;
+  width: 90%;
+  height: 500px;
+  justify-content: center;
+  left: 130px;
+}
+.main .main-header .main-header-text {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 72px;
+  width: 543px;
+  height: 360px;
+  display: inline-block;
+}
+.main .main-header .main-image {
+  position: absolute;
+  width: 600px;
+  height: 642px;
+  display: block;
+  left: 600px;
+  top: -50px;
+}
+.main .main-header .main-image .image-btc {
+  width: 550px;
+  height: 570px;
+}
+.main .main-header .main-exchange {
+  position: absolute;
+  height: 45px;
+  width: 580px;
+  display: flex;
+  box-shadow: 3px 3px 20px 3px;
+  border-radius: 40px;
+  text-align: center;
+  top: 420px;
+}
+.main .main-header .main-exchange .main-form {
+  height: 50px;
+  width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.main .main-header .main-exchange .main-form .main-form-firstCurrency {
+  display: inline-block;
+}
+.main .main-header .main-exchange .main-form .main-form-firstCurrency .btclogo {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 4px;
+}
+.main .main-header .main-exchange .main-form .main-form-secondCurrency {
+  display: inline;
+}
+.main .main-header .main-exchange .main-form .main-form-secondCurrency .usdlogo {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 1px;
+}
+.main .main-header .main-exchange .main-form .submit {
+  background-color: #00B16B;
+  border-radius: 20px;
+  color: white;
+  height: 40px;
+  width: 100px;
+  margin: 2.5px 0 0 7px;
+}
+.main .main-aboutUs-wrapper {
+  margin: 80px 0 0 130px;
+}
+.main .main-aboutUs-wrapper .main-aboutUS-height {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+}
+.main .main-aboutUs-wrapper .main-aboutUS-height .aboutUs-block {
+  padding: 15px 10px;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+}
+.main .main-aboutUs-wrapper .main-aboutUS-lower {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.main .main-aboutUs-wrapper .main-aboutUS-lower .aboutUs-block {
+  padding: 15px 10px;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+}
+.main .main-aboutUs-wrapper .gray {
+  background-color: #f8f6f6;
+  border-radius: 20px;
+}
+.main .main-aboutUs-wrapper .green {
+  background-color: #cbf8e3;
+  border-radius: 40px;
+}
+.main .partners {
+  width: 100%;
+  line-height: 100%;
+  border-bottom: 1px solid #797979;
+  border-top: 1px solid #797979;
+  margin: 150px 0 130px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.main .partners .partner {
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  padding: 5px 10px;
+}
+.main .main-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 70px 0;
+}
+.main .main-info .main-info-photo .photo-person {
+  width: 700px;
+  height: 500px;
+}
+.main .main-info .main-info-description {
+  width: 400px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main .main-info .main-info-description .info {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+}
+.main .main-info .main-info-description .span {
+  text-decoration: underline;
+}
+
+.footer {
+  font-size: 14px;
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: 190px;
+  margin-top: 30px;
+}
+.footer .footer-wrapper .footer-horizontalSection {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.footer .footer-wrapper .footer-horizontalSection .footer-verticalSection .title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.footer .footer-wrapper .footer-horizontalSection .footer-verticalSection .title-link {
+  color: #5d5def;
+}
+.footer .footer-wrapper .footer-horizontalSection .footer-verticalSection .title-link:hover {
+  text-decoration: none;
+}
+.footer .footer-wrapper .footer-horizontalSection .footer-verticalSection .footer-logo {
+  width: 32px;
+  height: 32px;
+}
+.footer .footer-wrapper .footer-horizontalSection .footer-verticalSection .footer-branch:hover {
+  text-decoration: underline white;
+  cursor: pointer;
+}
+.footer .footer-wrapper .footer-horizontalSection .footer-verticalSection .updatesForm .inputUpdates {
+  border-radius: 15px;
+  width: 170px;
+  height: 30px;
+  padding: 0 10px;
+  color: black;
+}
+.footer .footer-wrapper .footer-horizontalSection .footer-verticalSection .updatesForm .submitUpdatesBtn {
+  border-radius: 15px;
+  background-color: white;
+  font-size: 14px;
+  width: 80px;
+  height: 30px;
+  color: black;
+}
+.footer .footer-wrapper .footer-horizontalSection .footer-verticalSection .updatesForm .submitUpdatesBtn:hover {
+  background-color: #00B16B;
+}
+.footer .allRights {
+  margin-top: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 100;
+  padding: 0 0 10px 0;
+}
+.logggform{
+
+}
+.logggform-login{
+  text-align: center;
+  font-size: 16px;
+  width: 110px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: white;
+  border: 1px solid black;
+}
+.logggform-login:hover{
+  background-color: black;
+  color: white;
+}
+.logggform-signup{
+  text-align: center;
+  font-size: 16px;
+  width: 110px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #00B16B;
+  border: 1px solid black;
+}
+
+.token-list{
+  margin: 10px 0 0 0;
+  width: 110px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #5d5def;
+}
+.logged-as{
+  font-style: italic;
+  font-size: 16px;
+
+}
+.username-as{
+  font-weight: 700;
+  font-size: 18px;
+}
+.logout{
+  width: 110px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+}
+/*# sourceMappingURL=stylesreg.css.map */

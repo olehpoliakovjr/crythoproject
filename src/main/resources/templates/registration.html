@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Crytho|Registration</title>
+      <link rel="stylesheet" type="text/css" href="/css/stylesreg.css" th:href="@{/css/stylesreg.css}" >
+</head>
+<body>
+<header class="header">
+      <div class="container">
+            <div class="header-line">
+                  <div class="header-logo-title">
+                        <div class="header-logo"> <img class="logo" alt="logo" src="/images/bitcoinicon.png">
+                              <p class="name">Crytho</p> </div>
+                  </div>
+                  <div class="navigation">
+                        <a class="navigation-item" href="#">Home</a>
+                        <a class="navigation-item" href="#">Buy / Sell</a>
+                        <a class="navigation-item" href="#">About us</a>
+                        <a class="navigation-item" href="#">Contacts</a>
+                  </div>
+            </div>
+      </div>
+</header>
+<div class="reg-form">
+
+      <form class="form" th:method="POST" th:action="@{/save}" th:object="${newUser}">
+            <label class="reg-title field">Registration</label>
+            <input class="input field username" id="username" type="text" th:field="*{username}" placeholder="Username">
+            <input class="input field email" id="email" type="email" th:field="*{email}" placeholder="Email@">
+            <input class="input field" id="password" type="password" th:field="*{pass}" autocomplete="on" placeholder="Password">
+            <input type="submit" value="Sign up" class="input-submit field">
+      </form>
+
+</div>
+</body>
+</html>

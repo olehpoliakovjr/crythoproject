@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+      <link rel="stylesheet" type="text/css" href="/css/stylelog.css" th:href="@{/css/stylelog.css}" >
+</head>
+<body>
+<header class="header">
+      <div class="container">
+            <div class="header-line">
+                  <div class="header-logo-title">
+                        <div class="header-logo"> <img class="logo" alt="logo" src="/images/bitcoinicon.png">
+                              <p class="name">Crytho</p> </div>
+                  </div>
+                  <div class="navigation">
+                        <a class="navigation-item" href="#">Home</a>
+                        <a class="navigation-item" href="#">Buy / Sell</a>
+                        <a class="navigation-item" href="#">About us</a>
+                        <a class="navigation-item" href="#">Contacts</a>
+                  </div>
+            </div>
+      </div>
+</header>
+<div class="reg-form">
+      <form class="form" action="loggedHome"   method="post">
+            <label class="reg-title field">Crytho</label>
+            <input class="input field email" id="email" type="email" name="email" placeholder="Email@">
+            <input class="input field" id="password" type="password" name="password" autocomplete="on" placeholder="Password">
+            <div class="remember">
+                  <label for="scales" class="rem">Remember me</label>
+                  <input type="checkbox" id="scales" name="scales">
+            </div>
+            <div class="submitting">
+                  <input type="submit" value="Sign up" class="input-submit field">
+                  <a class="reset-password" href="#">Forgot password?</a>
+            </div>
+      </form>
+</div>
+</body>
+</html>

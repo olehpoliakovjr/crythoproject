@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crytho exchange</title>
+  <link rel="stylesheet" type="text/css" href="/css/styleLogin.css" th:href="@{/css/styleLogin.css}" >
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="/images/bitcoinicon.png">
+</head>
+<body>
+<div class="wrapper">
+  <header class="header">
+    <div class="container">
+      <div class="header-line">
+        <div class="header-logo-title">
+          <div class="header-logo"> <img class="logo" alt="logo" src="/images/bitcoinicon.png">
+            <p class="name">Crytho</p> </div>
+        </div>
+        <div class="navigation">
+          <a class="navigation-item" href="#">Home</a>
+          <a class="navigation-item" href="#">Buy / Sell</a>
+          <a class="navigation-item" href="#">About us</a>
+          <a class="navigation-item" href="#">Contacts</a>
+        </div>
+        <div class="header-functions">
+          <form action="tokens">
+            <input type = "submit" value="Top of tokens" class="token-list">
+          </form>
+          <br>
+         <p class="logged-as">you are logged as:</p>
+          <p class="username-as" th:text=" ${username}"></p>
+          <form action="/">
+            <input type = "submit" value="Logout" class="logout">
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main-wrapper">
+      <div class="container">
+        <div class="main-header">
+          <div class="main-header-text">
+            Buy and sell<br>
+            your<br>
+            cryptocurrencies<br>
+            without any <br>
+            commissions
+          </div>
+          <div class="main-image">
+            <img class="image-btc" src="/images/bitcoinicon.png" alt="logo-btc">
+          </div>
+          <div class="main-exchange">
+            <form class=main-form method="get">
+              <div class="main-form-firstCurrency">
+                <label><img class="btclogo" src="/images/bitcoin2.png"> BTC</label>
+                <input type="text" placeholder="Amount...">
+              </div>
+              <div class="main-form-secondCurrency">
+                <label><img class="usdlogo" src="/images/usd.png"> USDT</label>
+                <input type="text" placeholder="...">
+              </div>
+              <input class="submit" type="submit" value="Continue">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-aboutUs-wrapper">
+      <div class="container">
+        <div class="main-aboutUS-height">
+          <div class="aboutUs-block green">
+            <img src="/images/Iconhome.svg">
+            <h4>Security</h4>
+            <p>One of the main goal of Crytho is<br>
+              secure your customer.<br>
+              We trying to prevent most crimes.</p>
+          </div>
+          <div class="aboutUs-block gray">
+            <img src="/images/Iconsafe.svg">
+            <h4>Safe Transaction</h4>
+            <p>Crytho provide one of the most save<br>
+              way for transfer your money.</p>
+          </div>
+          <div class="aboutUs-block green">
+            <img src="/images/Backgroundcalendar.svg">
+            <h4>Durability</h4>
+            <p>Most of transaction has duration not<br>
+              more than 15 minutes.</p>
+          </div>
+        </div>
+        <div class="main-aboutUS-lower">
+          <div class="aboutUs-block green">
+            <img src="/images/Iconyes.svg" width="64px" height="64px">
+            <h4>All Unit Guarantee</h4>
+            <p>Crytho garanteed that your will <br>
+              recive your money.</p>
+          </div>
+          <div class="aboutUs-block gray">
+            <img src="/images/Icondollar.svg">
+            <h4>More option to buy</h4>
+            <p>Crytho provide a quite wide <br>
+              exchanging crythocurrencies.
+            </p>
+          </div>
+        </div>
+        <div class="partners">
+          <hr>
+          <div class="partner"><img src="/images/Forbes.svg"></div>
+          <div class="partner"><img src="/images/Bloomberg.svg"></div>
+          <div class="partner"><img src="/images/TC.svg"></div>
+          <div class="partner"><img src="/images/CNBC.svg"></div>
+          <div class="partner"><img src="/images/BusinessInsider.svg"></div>
+          <hr>
+        </div>
+        <div class="main-info">
+          <div class="main-info-photo">
+            <img alt="photo with person" class="photo-person" src="/images/manwithcrypto.jpeg">
+          </div>
+
+          <div class="main-info-description">
+            <p class="info">We've been on the market <span class="span">for three years</span></p>
+            <p class="info">Large number of users</p>
+            <p class="info">We are a partner of large companies</p>
+            <p class="info"><span class="span">Responsive</span> technical support</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-wrapper">
+      <div class="footer-horizontalSection">
+        <div class="footer-verticalSection">
+          <h4 class="title"><a class="title-link" href="#">Crytho</a> <img alt="logo" src="/images/bitcoinicon.png" class="footer-logo"></h4>
+          <p>Crypto-is the one of the <br>
+            best cryptocurrencies exchanges, our service <br>
+            provide rapid and common exchange.</p>
+        </div>
+        <div class="footer-verticalSection">
+          <h4 class="title">Company</h4>
+          <p class="footer-branch">About us</p>
+        </div>
+        <div class="footer-verticalSection">
+          <h4 class="title">Support</h4>
+          <p class="footer-branch">Help center</p>
+          <p class="footer-branch">Contact us</p>
+        </div>
+        <div class="footer-verticalSection">
+          <h4 class="title">Setup</h4>
+          <p class="footer-branch">Notifications</p>
+        </div>
+        <div class="footer-verticalSection">
+          <h4 class="title">Do you want to get updates?</h4>
+          <form class="updatesForm" method="get">
+            <div class="inputForm">
+              <input type="text" placeholder="Your email here..." class="inputUpdates">
+              <input class="submitUpdatesBtn" type="submit" value="Send">
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="allRights">Crytho &#169; 2022 <span class="span">All rights reserved</span> </div>
+</footer>
+</body>
+</html>
